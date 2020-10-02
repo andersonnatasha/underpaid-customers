@@ -1,6 +1,6 @@
 
 
-def determine_customer_payment(file_path, melon_cost):
+def determine_customer_payment(file_path, melon_cost = 1):
     """ Calculate who has underpaid or overpaid on their order of melons"""
 
 # open file 
@@ -31,4 +31,4 @@ def determine_customer_payment(file_path, melon_cost):
     the_file.close()
 
 #call the function 
-determine_customer_payment("customer-orders.txt", 1)
+determine_customer_payment("customer-orders.txt")
